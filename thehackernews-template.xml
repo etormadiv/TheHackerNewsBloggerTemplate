@@ -1107,23 +1107,6 @@ function removeHtmlTag(e,t){if(e.indexOf("<")!=-1){var n=e.split("<");for(var r=
 //]]>
 </script>
 <b:section class='main clear' id='main'>
-  <b:widget id='HTML1' locked='true' title='المنصة (Header)' type='HTML'>
-    <b:includable id='main'>
-			
-			</b:includable>
-    <b:includable id='description'>
-  <div class='descriptionwrapper'>
-    <p class='description'><span><data:description/></span></p>
-  </div>
-</b:includable>
-    <b:includable id='title'>
-  <b:if cond='data:blog.url == data:blog.homepageUrl'>
-    <data:title/>
-  <b:else/>
-    <a expr:href='data:blog.homepageUrl'><data:title/></a>
-  </b:if>
-</b:includable>
-  </b:widget>
   <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
     <b:includable id='main' var='top'>
 	<b:if cond='data:blog.pageType == "index"'>
